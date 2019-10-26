@@ -2,9 +2,9 @@
 
 .. _access:
 
-======================
-Backend Access Control
-======================
+==============
+Access Control
+==============
 
 .. toctree::
    :maxdepth: 5

@@ -1,6 +1,7 @@
 .. include:: Includes.txt
 
 .. _start:
+.. _api-overview:
 
 ===============
 TYPO3 Explained
@@ -37,10 +38,14 @@ TYPO3 Explained
 :Rendered:
       |today|
 
+.. rst-class:: horizbuttons-tip-xxl
+
+- :ref:`Sitemap`
+
+
 The content of this document is related to TYPO3 CMS,
 a GNU/GPL CMS/Framework available from `www.typo3.org
 <https://typo3.org/>`_
-
 
 **Official Documentation**
 
@@ -64,18 +69,101 @@ Core Manuals are written as reference manuals. The reader should rely
 on the Table of Contents to identify what particular section will best
 address the task at hand.
 
+..   Note for editors:
+..     temporarily removed from menu:
+..   Introduction/Index
+
 
 .. toctree::
    :hidden:
 
-   Introduction/Index
-   ExtensionArchitecture/Index
-   ApiOverview/Index
-   ApiOverview/Examples/Index
-   Security/Index
-   Testing/Index
+
+   Quicklinks
+
+.. toctree::
+   :caption: TYPO3 A-Z
+   :hidden:
+
+   ApiOverview/AccessControl/Index
+   ApiOverview/Authentication/Index
+   ApiOverview/Autoloading/Index
+   ApiOverview/BackendModules/Index
+   ApiOverview/BackendRouting/Index
+   ApiOverview/BackendUserObject/Index
+   ApiOverview/Bootstrapping/Index
+   ApiOverview/BroadcastChannels/Index
+   ApiOverview/CachingFramework/Index
    CodingGuidelines/Index
+   ApiOverview/Configuration/Index
+   ApiOverview/ContentElements/Index
+   ApiOverview/Context/Index
+   ApiOverview/ContextSensitiveHelp/Index
+   ApiOverview/FileProcessing/Index
+   ApiOverview/Database/Index
    DataFormats/Index
+   ApiOverview/DependencyInjection/Index
+   ApiOverview/Fal/Index
+   ApiOverview/DirectoryStructure/Index
+   ApiOverview/Enumerations/Index
+   ApiOverview/Environment/Index
+   ApiOverview/ErrorAndExceptionHandling/Index
+   ExtensionArchitecture/Index
+   ApiOverview/Hooks/Index
+   ApiOverview/ExtensionScanner/Index
+   ApiOverview/FeatureToggles/Index
+   ApiOverview/FlashMessages/Index
+   ApiOverview/FlexForms/Index
+   ApiOverview/FormEngine/Index
+   ApiOverview/FormProtection/Index
+   ApiOverview/Http/Index
+   ApiOverview/Icon/Index
+   ApiOverview/Internationalization/Index
+   ApiOverview/JavaScript/Index
+   ApiOverview/LinkBrowser/Index
+   ApiOverview/LockingApi/Index
+   ApiOverview/Logging/Index
+   ApiOverview/Mail/Index
+   ApiOverview/MetaTagApi/Index
+   ApiOverview/Namespaces/Index
+   ApiOverview/PageTitleApi/Index
+   ApiOverview/PageTypes/Index
+   ApiOverview/PasswordHashing/Index
+   ApiOverview/RequestHandling/Index
+   ApiOverview/Rte/Index
+   ApiOverview/Routing/Index
+   Security/Index
+   ApiOverview/Seo/Index
+   ApiOverview/Services/Index
+   ApiOverview/SessionStorageFramework/Index
+   ApiOverview/SiteHandling/Index
+   ApiOverview/SoftReferences/Index
+   ApiOverview/CommandControllers/Index
+   ApiOverview/SymfonyExpressionLanguage/Index
+   ApiOverview/Categories/Index
+   ApiOverview/Collections/Index
+   ApiOverview/SystemLog/Index
+   ApiOverview/SystemRegistry/Index
+   ApiOverview/Typo3CoreEngine/Index
+   Testing/Index
+   ApiOverview/Tsconfig/Index
+   ApiOverview/TypoScriptSyntax/Index
+   ApiOverview/UpdateWizards/Index
+   ApiOverview/UserSettingsConfiguration/Index
+   ApiOverview/GlobalValues/Index
+   ApiOverview/Workspaces/Index
+   ApiOverview/Xclasses/Index
+   ApiOverview/XmlSitemap/Index
+   ApiOverview/Yaml/Index
+
+
+.. todo: ApiOverview/Examples/
+
+
+.. toctree::
+   :caption: --------------
+   :hidden:
+
    Sitemap
+   About
    Targets
 
