@@ -111,3 +111,39 @@ need to be referred to explicitly using the :code:`EXT:LLL:extkey/path/to/file:m
 As mentioned above, the translation files follow the same naming conventions, but
 are prepended with the language code and a dot. They are stored alongside the default
 language files.
+
+.. _xliff-best-practices:
+
+Best practices
+==============
+
+.. _xliff-best-practices-id-naming:
+
+ID naming
+---------
+
+There is no strict rule or guideline in place for defining identifiers = the ``id`` attribute.
+But it can be considered to be best practice to follow these rules:
+
+Separate by dots
+   Use dots to separate logical parts of the identifier.
+   An good example would be ``CType.menu_abstract``.
+   Contrary these would be bad examples: ``CType_menu_abstract``
+   ``CType-menu_abstract``.
+
+Namespace
+   Group identifiers together with a useful namespace.
+   An good example would be ``CType.menu_abstract``, to group all available
+   content types for content elements.
+   Contrary these would be bad example ``menu_abstract``.
+
+   Namespaces should be defined by context. ``menu_abstract.CType`` could also
+   be a reasonable namespace, if the context is about ``menu_abstract``.
+
+Case
+   In general lowerCamelCase is used. But concrete case depends on the actual
+   identifier. E.g. snake_case is sometimes used for database column names, when
+   they are written the same way.
+
+   lowerCamelCase is the default and fallback, but other cases are used when
+   they were already in place.
