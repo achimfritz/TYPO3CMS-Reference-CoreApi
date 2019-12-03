@@ -119,3 +119,37 @@ For each of the severity levels mentioned above, a shorthand method exists in
 - :code:`$this->logger->info($message, array $data = array());`
 - :code:`$this->logger->notice($message, array $data = array());`
 - etc.
+
+.. _logging-logger-best-practices:
+
+Best Practices
+==============
+
+There are no strict rules or guidelines about logging.
+But it can be considered to be best practice to follow these rules:
+
+Meaningful message
+   The message itself has to be meaningful, like Exception messages.
+
+Searchable message
+   Most of the times log entries will be stored.
+   They are most important if something goes wrong within the system.
+   In such situations people might search for specific issues or situations.
+   Considering this while writing log entries will reduce debugging time in future.
+
+   Messages should therefore contain keywords that might be used in searches.
+
+Distinguishable
+   Log entries might be collected and people might scroll through them.
+   Therefore it is helpful to write log entries that are distinguishable.
+
+Provide useful information
+   TYPO3 already uses the component of the logger to give some context.
+   Still further individual context might be available that should be added.
+   In case of an exception, the code, stacktrace, file and line number would be
+   helpful.
+
+   Keep in mind that it is hard to add information afterwards.
+   Logging is there to get information if something got wrong.
+   All necessary information should be available to get the state of the system
+   and why something happened.
